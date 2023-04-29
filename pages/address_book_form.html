@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/address_book_form.css">
+    <title>Address Book Form</title>
+</head>
+<body>
+    <header class="header-content header">
+        <div class="logo-content">
+          <img src="../assets/images/logo.jpeg" alt="">
+          <div>
+            <span class="emp-text">ADDRESS</span><br>
+            <span class="emp-text emp-payroll">BOOK</span>
+          </div>
+        </div>
+      </header>
+      <div class="form-content">
+        <form class="form" action="#" oncancel="cancelForm()" onreset="resetForm()" onsubmit="save(event)">
+
+          <div class="form-head">
+            <div class="form-head-text">PERSON ADDRESS FORM</div> 
+            <a href="../pages/new_payroll_form.html" class="cancelButton">
+            <img src="../assets/images/cancelButton.png" alt="Cancel"></a>   
+          </div>
+
+            <div class="row-content">
+                <label class="label text" for="fullname">Full Name</label>
+                <input class="input" type="text" id="fullname" name="fullname" placeholder="Your Full Name..." required>
+            </div>
+
+            <div class="row-content">
+                <label class="label text" for="address">Address</label>
+                <textarea id="address" class="input" name="address" placeholder="Address" style="height:100px;"></textarea>
+            </div>
+
+            <div class="row-content">  
+            <div class="row-content-sub">
+              <label class="label text" for="city">City</label>
+                <select class="select-input" id="city" name="City" required>
+                  <option value="Mumbai">Mumbai</option>
+                  <option value="Bengaluru">Bengaluru</option>
+                  <option value="Delhi">Delhi</option>
+                  <option value="Hyderabad">Hyderabad</option>
+                  <option value="Lucknow">Lucknow</option>
+                  <option value="Chennai">Chennai</option>
+                  <option value="Kolkata">Kolkata</option>
+                  <option value="Jaipur">Jaipur</option>
+                  <option value="Chandigarh">Chandigarh</option>
+                  <option value="Gandhinagar">Gandhinagar</option>
+                </select>
+            </div> 
+            <div class="row-content-sub">
+              <label class="label text" for="state">State</label>
+                <select class="select-input" id="state" name="State" required>  
+                  <option value="Maharashtra">Maharashtra</option>
+                  <option value="Karnataka">Karnataka</option>
+                  <option value="Delhi">Delhi</option>
+                  <option value="Telangana">Telangana</option>
+                  <option value="UttarPradesh">UttarPradesh</option>
+                  <option value="TamilNadu">TamilNadu</option>
+                  <option value="WestBengal">WestBengal</option>
+                  <option value="Rajasthan">Rajasthan</option>
+                  <option value="Punjab">Punjab</option>
+                  <option value="Gujarat">Gujarat</option>
+                </select>
+            </div>  
+            <div class="row-content-sub">
+                <label class="label text" for="zip">ZIP</label>  
+                <input class="input" type="text" name="ZIP" id="zip" required>
+            </div>
+          </div>
+
+            <div class="row-content">
+                <label class="label text" for="phone">Phone Number</label>
+                <input class="input" type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+            </div>
+
+            <div class="button-content">
+                <div class="add-reset">
+                  <button type="add" class="button addButton" id ="addButton">Add</button>
+                  <button type="reset" class="resetButton button">Reset</button>
+                </div>
+              </div> 
+        </form>
+      </div>
+</body>
+</html>
